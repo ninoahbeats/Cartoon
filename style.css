@@ -144,3 +144,17 @@ header h1 {
   background: #ff3300;
   transform: scale(1.05);
 }
+.char-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1a1a2e;
+  border: 2px solid #ffcc00;
+}
