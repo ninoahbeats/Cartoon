@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cartoon RPG: Multiverse Mayhem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>💥 CARTOON RPG: MULTIVERSE MAYHEM 💥</h1>
+    <p id="location-banner">Current Location: 🏡 Simpson House (Hub)</p>
+  </header>
+
+  <main class="game-container">
+    
+    <!-- LEFT PANEL: Visual Display Area -->
+    <section class="viewport-card">
+      <div id="scene-display">
+        <img id="scene-image" src="images/simpson_house.png" alt="Current Scene" />
+      </div>
+      <div id="dialogue-box">
+        <p id="story-text">Welcome to the Simpson House! Pick an action below to start your adventure.</p>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL: Party Stats Sidebar -->
+    <aside class="sidebar-card">
+      <h2>🦸 Party Roster</h2>
+      
+      <div class="character-card">
+        <div class="char-info">
+          <strong>🥒 Pickle Rick</strong>
+          <span class="stat-tag">Smarts: 22</span>
+        </div>
+        <div class="hp-bar-container">
+          <div class="hp-bar" id="rick-hp" style="width: 100%;"></div>
+        </div>
+        <small>HP: <span id="rick-hp-text">28 / 28</span></small>
+      </div>
+
+      <div class="character-card">
+        <div class="char-info">
+          <strong>🦇 Batman</strong>
+          <span class="stat-tag">Smarts: 18</span>
+        </div>
+        <div class="hp-bar-container">
+          <div class="hp-bar" id="batman-hp" style="width: 100%;"></div>
+        </div>
+        <small>HP: <span id="batman-hp-text">32 / 32</span></small>
+      </div>
+
+      <div class="character-card">
+        <div class="char-info">
+          <strong>🏃 Road Runner</strong>
+          <span class="stat-tag">Agility: 20</span>
+        </div>
+        <div class="hp-bar-container">
+          <div class="hp-bar" id="runner-hp" style="width: 100%;"></div>
+        </div>
+        <small>HP: <span id="runner-hp-text">16 / 16</span></small>
+      </div>
+
+      <h2>📜 Action Log</h2>
+      <div id="game-log">
+        <p>• Game started at the Simpson House.</p>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- BOTTOM PANEL: Interactive Action Controls -->
+  <footer class="controls-card">
+    <button class="btn" onclick="takeAction('attack')">⚔️ Attack</button>
+    <button class="btn" onclick="takeAction('special')">⚡ Special Move</button>
+    <button class="btn" onclick="takeAction('rest')">🛋️ Rest on Couch</button>
+    <button class="btn" onclick="takeAction('travel')">🗺️ Travel (Travel Map)</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
